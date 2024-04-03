@@ -29,9 +29,6 @@ jobs:
       run: ./gradlew build
 
     - name: Build and Push Docker Image
-      run: |
-        # docker build -t asheesh997/docker-workflow .
-        # docker push asheesh997/docker-workflow
       uses: mr-smithers-excellent/docker-build-push@v4
       with:
         image: asheesh997/docker-workflow
